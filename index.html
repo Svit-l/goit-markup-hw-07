@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Svitlana Lozovenko">
-    <meta name="description" content="GoIT-training. Homework 6. Page 1 of 2">
+    <meta name="description" content="GoIT-training. Homeproduct-card 7. Page 1 of 2">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,17 +23,17 @@
     <header class="top-header">
         <div class="block-nav container">
             <nav class="main-nav">
-                <a class="logo link link" href="./" lang="en"><span class="blue-text-logo"
-                        lang="en">Web</span>Studio</a>
+                <a class="logo main-nav__logo link" href="./" lang="en">Web<span
+                        class="logo logo--dark">Studio</span></a>
                 <ul class="menu list">
-                    <li class="menu-item">
-                        <a class="menu-link link current" href="./">Студия</a>
+                    <li class="menu__item">
+                        <a class="menu__link link menu__link--current" href="./">Студия</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link link" href="./portfolio.html">Портфолио</a>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="./portfolio.html">Портфолио</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link link" href="">Контакты</a>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -53,13 +53,13 @@
     <main>
         <!--HERO-->
         <section class="hero">
-            <div class="hero-wrap container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <div class="hero__wrap container">
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal-window">
-                    <p class="modal-window-title">Оставьте свои данные, мы вам перезвоним</p>
+                    <p class="modal-window__title">Оставьте свои данные, мы вам перезвоним</p>
                     <button class="modal-close-btn" type="button" data-modal-close>
                         <svg class="close-icon" width="11" height="11">
                             <use href="./img/icons.svg#icon-close"></use>
@@ -118,17 +118,17 @@
         <!--Features-->
         <section class="features section">
             <div class="container">
-                <h2 class="visually-hidden">Наши приимущества</h2>
-                <ul class="features-list list">
+                <h2 class="section__title visually-hidden">Наши приимущества</h2>
+                <ul class="features__list list">
                     <li class="features-item">
                         <div class="feature-icon-wrapping">
                             <svg class="feature-icon">
                                 <use href="./img/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="features-item-title">Внимание к деталям
+                        <h3 class="features-item__title">Внимание к деталям
                         </h3>
-                        <p class="features-item-desc">Идейные соображения, а также начало повседневной работы по
+                        <p class="features-item__desc">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
                     </li>
                     <li class="features-item">
@@ -137,8 +137,8 @@
                                 <use href="./img/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="features-item-title">Пунктуальность</h3>
-                        <p class="features-item-desc">Задача организации, в особенности же рамки и место обучения
+                        <h3 class="features-item__title">Пунктуальность</h3>
+                        <p class="features-item__desc">Задача организации, в особенности же рамки и место обучения
                             кадров
                             влечет за собой.</p>
                     </li>
@@ -148,8 +148,8 @@
                                 <use href="./img/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="features-item-title">Планирование</h3>
-                        <p class="features-item-desc">Равным образом консультация с широким активом в значительной
+                        <h3 class="features-item__title">Планирование</h3>
+                        <p class="features-item__desc">Равным образом консультация с широким активом в значительной
                             степени
                             обуславливает.</p>
                     </li>
@@ -159,9 +159,9 @@
                                 <use href="./img/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="features-item-title">Современные
+                        <h3 class="features-item__title">Современные
                             технологии</h3>
-                        <p class="features-item-desc">Значимость этих проблем настолько очевидна, что реализация
+                        <p class="features-item__desc">Значимость этих проблем настолько очевидна, что реализация
                             плановых
                             заданий.</p>
                     </li>
@@ -172,7 +172,7 @@
         <!--Activity-->
         <section class="activity section">
             <div class="activity-wrap container">
-                <h2 class="activity-title">Чем мы занимаемся</h2>
+                <h2 class="section__title activity-title">Чем мы занимаемся</h2>
                 <ul class="activity-list list">
                     <li class="activity-item">
                         <img class="activity-pic" src="./img/activity/activity1.jpg"
@@ -194,16 +194,16 @@
         </section>
 
         <!--Team-->
-        <section class="team section">
+        <section class="team-cards section">
             <div class="container">
-                <h2 class="team-cards-title">Наша команда</h2>
-                <ul class="team-cards-list list">
-                    <li class="team-cards-item">
-                        <img class="member-img" src="./img/team/demjanenko.jpg" alt="фотография Игоря Демьяненко"
+                <h2 class="section__title team-cards__title">Наша команда</h2>
+                <ul class="team-cards__list list">
+                    <li class="team-cards__item">
+                        <img class="team-cards__img" src="./img/team/demjanenko.jpg" alt="фотография Игоря Демьяненко"
                             width="270" height="260">
-                        <div class="team-card-text">
-                            <h3 class="member-name">Игорь Демьяненко</h3>
-                            <p class="member-proffesion" lang="en">Product Designer</p>
+                        <div class="team-cards__text">
+                            <h3 class="team-cards__name">Игорь Демьяненко</h3>
+                            <p class="team-cards__proffesion" lang="en">product-card Designer</p>
                             <ul class="social-list list">
                                 <li class="social-item">
                                     <a href="" class="social-link link">
@@ -236,12 +236,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-cards-item">
-                        <img class="member-img" src="./img/team/repina.jpg" alt="фотография Ольги Репиной" width="270"
-                            height="260">
-                        <div class="team-card-text">
-                            <h3 class="member-name">Ольга Репина</h3>
-                            <p class="member-proffesion" lang="en">Frontend Developer</p>
+                    <li class="team-cards__item">
+                        <img class="team-cards__img" src="./img/team/repina.jpg" alt="фотография Ольги Репиной"
+                            width="270" height="260">
+                        <div class="team-cards__text">
+                            <h3 class="team-cards__name">Ольга Репина</h3>
+                            <p class="team-cards__proffesion" lang="en">Frontend Developer</p>
                             <ul class="social-list list">
                                 <li class="social-item">
                                     <a href="" class="social-link link">
@@ -274,12 +274,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-cards-item">
-                        <img class="member-img" src="./img/team/tarasov.jpg" alt="фотография Николая Тарасова"
+                    <li class="team-cards__item">
+                        <img class="team-cards__img" src="./img/team/tarasov.jpg" alt="фотография Николая Тарасова"
                             width="270" height="260">
-                        <div class="team-card-text">
-                            <h3 class="member-name">Николай Тарасов</h3>
-                            <p class="member-proffesion" lang="en">Marketing</p>
+                        <div class="team-cards__text">
+                            <h3 class="team-cards__name">Николай Тарасов</h3>
+                            <p class="team-cards__proffesion" lang="en">Marketing</p>
                             <ul class="social-list list">
                                 <li class="social-item">
                                     <a href="" class="social-link link">
@@ -312,12 +312,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-cards-item">
-                        <img class="member-img" src="./img/team/yermakov.jpg" alt="фотография Михаила Ермакова"
+                    <li class="team-cards__item">
+                        <img class="team-cards__img" src="./img/team/yermakov.jpg" alt="фотография Михаила Ермакова"
                             width="270" height="260">
-                        <div class="team-card-text">
-                            <h3 class="member-name">Михаил Ермаков</h3>
-                            <p class="member-proffesion" lang="en">UI Designer</p>
+                        <div class="team-cards__text">
+                            <h3 class="team-cards__name">Михаил Ермаков</h3>
+                            <p class="team-cards__proffesion" lang="en">UI Designer</p>
                             <ul class="social-list list">
                                 <li class="social-item">
                                     <a href="" class="social-link link">
@@ -357,8 +357,8 @@
         <!--Clients-->
         <section class="clients section">
             <div class="container">
-                <h2 class="clients-title">Постоянные клиенты</h2>
-                <ul class="clients-list list">
+                <h2 class="section__title clients__title">Постоянные клиенты</h2>
+                <ul class="clients__list list">
                     <li class="client-item">
                         <a href="" class="client-link link">
                             <svg class="client-icon" width="41" height="47">
@@ -410,8 +410,8 @@
     <footer class="footer">
         <div class="footer-wrap container">
             <div class="footer-contacts">
-                <a class="white-text-logo link" href="./" lang="en"><span class="blue-text-logo"
-                        lang="en">Web</span>Studio</a>
+                <a class="logo footer__logo link" href="./" lang="en">Web<span
+                        class="logo logo--light">Studio</span></a>
                 <address class="address">
                     <ul class="address-list list">
                         <li class="address-list-item">

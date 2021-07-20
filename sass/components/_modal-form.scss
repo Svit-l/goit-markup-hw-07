@@ -1,0 +1,9 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  &__submit {
+    align-self: center;
+    margin-top: 30px;
+  }
+}

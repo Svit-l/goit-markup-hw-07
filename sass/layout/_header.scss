@@ -3,6 +3,11 @@
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
   &__mail {
     margin-right: 50px;
     margin-left: auto;

@@ -26,3 +26,10 @@
     margin: 0 auto 30px;
   }
 }
+
+.modal-btn {
+  @extend %btn;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+}

@@ -56,4 +56,9 @@
 
 .policy-link {
   color: var(--accent-color);
+
+  &:focus,
+  &:hover {
+    outline: 1px dotted rgb(73, 71, 71);
+  }
 }
